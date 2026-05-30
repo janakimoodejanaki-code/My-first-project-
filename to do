@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+        <title>to do</title>
+  </head>
+  <body>
+  <input type="text" id="name"placeholder="type here">
+  <button id="click">click</button>
+  <ul id="list">
+    <li>cse</li>
+    <li>eee</li>
+    <li>ece</li>
+  </ul>
+  
+  <script>
+let list = document.getElementById("list");
+let input = document.getElementById("name");
+let button = document.getElementById("click");
+
+button.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (input.value === "") {
+        alert("Please enter something");
+        return;
+    }
+
+    let li = document.createElement("li");
+    li.textContent = input.value;
+
+    list.appendChild(li);
+
+    input.value = "";
+});
+  </body>
+</html>
