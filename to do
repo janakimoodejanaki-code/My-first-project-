@@ -19,12 +19,10 @@ let button = document.getElementById("click");
 
 button.addEventListener("click", function (e) {
     e.preventDefault();
-
     if (input.value === "") {
         alert("Please enter something");
         return;
     }
-
     let li = document.createElement("li");
     li.textContent = input.value;
 
