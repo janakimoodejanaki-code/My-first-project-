@@ -1,0 +1,150 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>challenges</title>
+
+  <style>
+  #display{
+  width:100%;
+
+font-size:1.5rem;
+padding:10px;
+box-sizing: border-box;
+}
+.btn:active{
+  background:green;
+}
+#buttons{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  gap: 10px;
+}
+</style>
+</head>
+<body>
+  <input type ="text" id="display"readonly>
+    
+      <div id="buttons">
+
+    
+
+    
+     <button class="btn">AC</button>
+    <button class="btn">7</button>
+     <button class="btn">8</button>
+     <button class="btn">9</button>
+     <button class="btn">/</button>
+     <button class="btn">4</button>
+    <button class="btn">5</button>
+     <button class="btn">6</button>
+     <button class="btn">*</button>
+     <button class="btn">1</button>
+    <button class="btn">2</button>
+     <button class="btn">3</button>
+     <button class="btn">-</button>
+     <button class="btn">0</button>
+    
+     <button class="btn">+</button>
+     <button class="btn">=</button>
+    <button class="btn">%</button>
+       <button class="btn">,</button>
+       <button class="btn">.</button>
+   <button class="btn">⌫</button>
+      
+     
+     
+     
+    </div>
+    <script>
+    let firstnumber = "";
+let operator = "";
+let secondnumber = "";
+let display=
+document.getElementById("display");
+let buttons=
+document.querySelectorAll(".btn");
+buttons.forEach(function (button){
+  button.onclick=function (){
+  let value=
+  button.textContent.trim();
+  console.log("Button:",value);
+
+if(
+  value === "+"||
+  value === "-"||
+  value === "/"||
+  value === "*"
+){
+  operator=value;
+  display.value=firstnumber+operator;
+  console.log(operator);
+}
+else if(value==="="){
+  let answer;
+if(operator==="+"){
+  answer=
+  Number(firstnumber)+Number(secondnumber);
+}
+else if(operator === "-") {
+  answer=
+  Number(firstnumber)-Number(secondnumber);
+}
+   else if(operator === "*") {
+  answer=
+  Number(firstnumber)*Number(secondnumber);
+}
+else if(operator === "/") {
+  answer=
+  Number(firstnumber)/Number(secondnumber);
+}
+
+console.log(answer);
+display.value=answer;
+firstnumber=answer.toString();
+operator="";
+secondnumber="";
+}
+else if(value==="AC"){
+  firstnumber="";
+  secondnumber="";
+  operator="";
+  display.value="";
+}
+else if (value === "⌫") {
+  if (operator === "") {
+    firstnumber = firstnumber.slice(0, -1);
+    display.value = firstnumber;
+  } else if (secondnumber === "") {
+    operator = "";
+    display.value = firstnumber;
+  } else {
+    secondnumber = secondnumber.slice(0, -1);
+    display.value = firstnumber + operator + secondnumber;
+  }
+}else if (value === "%") {
+  if (operator === "") {
+    firstnumber = (Number(firstnumber) / 100).toString();
+    display.value = firstnumber;
+  } else {
+    secondnumber = (Number(secondnumber) / 100).toString();
+    display.value = firstnumber + operator + secondnumber;
+  }
+}
+else{
+
+    if (operator === "") {
+        firstnumber += value;
+        display.value = firstnumber;
+    } else {
+        secondnumber += value;
+        display.value = firstnumber+operator+secondnumber;
+    }
+
+}
+};
+
+});
+</script>
+</body>
+</html>
