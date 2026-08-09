@@ -1,93 +1,583 @@
-<! DOCTYPE html>
-<html>
 
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+</head>
+<body>
+  <h2 id="heading">Hello [Click Me]</h2> 
+  <button onclick="changeText()">Click Me</button>
+<script src="main.js"></script>
+</body>
+</html>-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+</head>
+<body>
+<p id="para">this is paragraph
+[change]</p>
+<button onclick="changedtext()">change</button>
+<script src="main.js"></script>
+</body>
+</html>-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+</head>
+<body>
+  <input type="text" id="nameput">[input box]
+<h2 id="para"></h2>
+<button onclick="Text()">[show]</button>
+<script src="main.js"></script>
+</body>
+</html>-->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+</head>
+<body>
+ <h1 id="count">0</h1>
+<button onclick="increase ()">[+]</button>
+<button onclick="decrease()">[-]</butto>
+<script src="main.js"></script>
+</body>
+</html>-->
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+</head>
+<body>
+ <button id="btn">click here</button>
+ <h1 id="text">this is heading</h1>
+
+<script src="main.js"></script>
+</body>
+
+</html>-->
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+</head>
+<body>
+ <input type="text" id="textInput">
+ <p id="output"></p>
+
+<script src="main.js"></script>
+</body>
+</html>-->
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+</head>
+<body>
+  <input type="text" id="textInput" placeholder="Type here..">
+  
+  <p id="output"></p>
+  <p>Characters: <span id="count">0</span></p>
+
+  <script src="main.js"></script>
+</body>
+</html>-->
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+</head>
+<body>
+  <ul id="list">
+<li>cse</li>
+<li>ece</li>
+<li>civil</li>
+</ul
+<p id="output"></p>
+  
+
+  <script src="main.js"></script>
+</body>
+</html>-->
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 1</title>
+</head>
+<body>
+  <form id="out">
+    <input type="text" id="username" placeholder="enter user name">
+    <input type="text" id="email"
+    placeholder="enter your email">
+  <button type="submit">sumbit</button>
+    
+  </form>
+  
+
+  <script src="main.js"></script>
+</body>
+</html>-->
+
+
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+        <title>counter app</title>
+  </head>
+  <body>
+  <h1 id="count">0</h1>
+  <button onclick="increase()">[+]</button>
+  <button onclick="decrease()">[-]</button>
+  <button onclick="reset()">Reset</button>
+  
+  <script src="main.js"></script>
+  </body>
+</html>-->
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+        <title>to do</title>
+  </head>
+  <body>
+  <input type="text" id="name"placeholder="type here">
+  <button id="click">click</button>
+  <ul id="list">
+    <li>cse</li>
+    <li>eee</li>
+    <li>ece</li>
+  </ul>
+  
+  <script>
+    let list = document.getElementById("list");
+let input = document.getElementById("name");
+let button = document.getElementById("click");
+
+button.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (input.value === "") {
+        alert("Please enter something");
+        return;
+    }
+
+    let li = document.createElement("li");
+    li.textContent = input.value;
+
+    list.appendChild(li);
+
+    input.value = "";
+});
+  </script>
+  </body>
+</html>-->
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+        <title>to do</title>
+  </head>
+  <body>
+  
+  <ul id="list">
+    
+    <li>cse</li>
+    <li>eee</li>
+    <li>ece</li>
+  </ul>
+  
+  <script src="main.js"</script>
+  </body>
+</htmli
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Example</title>
+</head>
+<body>
+
+<button onclick="toggleText()">Toggle</button>
+
+<p id="text">Hello! I am visible now 👋</p>
+
+<script>
+  function toggleText() {
+    const text = document.getElementById("text");
+
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>-->
+<!--<!DOCTYPE html>
+<head>
+  <meta name="viewport" 
+  content="width=device-width", initial-scale="1">
+</head>
+<body>
+  <p id="title">hello</p>
+  <button onclick="changeText()">click</button>
+  <script>
+  function changeText() {
+let p=
+document.getElementById("title");
+p.innerText="welcome!";
+p.style.color="red";
+
+} 
+</script>
+</body>-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>challenges</title>
+
+  <style>
+  #display{
+  width:100%;
+
+font-size:1.5rem;
+padding:10px;
+box-sizing: border-box;
+}
+.btn:active{
+  background:green;
+}
+#buttons{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  gap: 10px;
+}
+</style>
+</head>
+<body>
+  <input type ="text" id="display"readonly>
+    
+      <div id="buttons">
+
+    
+    <button class="btn">(</button>
+     <button class="btn">)</button>
+     <button class="btn">%</button>
+     <button class="btn">AC</button>
+    <button class="btn">7</button>
+     <button class="btn">8</button>
+     <button class="btn">9</button>
+     <button class="btn">,</button>
+     <button class="btn">4</button>
+    <button class="btn">5</button>
+     <button class="btn">6</button>
+     <button class="btn">*</button>
+     <button class="btn">1</button>
+    <button class="btn">2</button>
+     <button class="btn">3</button>
+     <button class="btn">-</button>
+     <button class="btn">0</button>
+    <button class="btn">.</button>
+     <button class="btn">+</button>
+     <button class="btn">=</button>
+   
+     <button class="btn">abc</button>
+     <button class="btn">(</button>
+     <button class="btn">)</button>
+     <button class="btn">:</button>
+     
+    </div>
+    <script>
+    let firstnumber = "";
+let operator = "";
+let secondnumber = "";
+
+let display = document.getElementById("display");
+let buttons = document.querySelectorAll(".btn");
+
+buttons.forEach(function(button) {
+    button.onclick = function() {
+
+        let value = button.innerText;
+
+        // AC button
+        if (value === "AC") {
+            firstnumber = "";
+            secondnumber = "";
+            operator = "";
+            display.value = "";
+            return;
+        }
+
+        // Operator
+        if (value === "+" || value === "-" ||
+            value === "*" || value === "/" ||
+            value === "%") {
+
+            operator = value;
+            display.value = firstnumber + operator;
+            return;
+        }
+
+        // Equal button
+        if (value === "=") {
+            let result;
+
+            switch (operator) {
+                case "+":
+                    result = Number(firstnumber) + Number(secondnumber);
+                    break;
+
+                case "-":
+                    result = Number(firstnumber) - Number(secondnumber);
+                    break;
+
+                case "*":
+                    result = Number(firstnumber) * Number(secondnumber);
+                    break;
+
+                case "/":
+                    result = Number(firstnumber) / Number(secondnumber);
+                    break;
+
+                case "%":
+                    result = Number(firstnumber) % Number(secondnumber);
+                    break;
+            }
+
+            display.value = result;
+            firstnumber = result.toString();
+            secondnumber = "";
+            operator = "";
+            return;
+        }
+
+        // Store numbers
+        if (operator === "") {
+            firstnumber += value;
+        } else {
+            secondnumber += value;
+        }
+
+        // Update display
+        display.value = firstnumber + operator + secondnumber;
+    };
+});
+   
+      
+    </script>
+  
+</body>
+</html>-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>challenges</title>
+
+  <style>
+  #display{
+  width:100%;
+
+font-size:1.5rem;
+padding:10px;
+box-sizing: border-box;
+}
+.btn:active{
+  background:green;
+}
+#buttons{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  gap: 10px;
+}
+</style>
+</head>
+<body>
+  <input type ="text" id="display"readonly>
+    
+      <div id="buttons">
+
+    
+
+    
+     <button class="btn">AC</button>
+    <button class="btn">7</button>
+     <button class="btn">8</button>
+     <button class="btn">9</button>
+     <button class="btn">/</button>
+     <button class="btn">4</button>
+    <button class="btn">5</button>
+     <button class="btn">6</button>
+     <button class="btn">*</button>
+     <button class="btn">1</button>
+    <button class="btn">2</button>
+     <button class="btn">3</button>
+     <button class="btn">-</button>
+     <button class="btn">0</button>
+    
+     <button class="btn">+</button>
+     <button class="btn">=</button>
+    <button class="btn">%</button>
+       <button class="btn">,</button>
+       <button class="btn">.</button>
+   <button class="btn">⌫</button>
+      
+     
+     
+     
+    </div>
+    <script>
+    let firstnumber = "";
+let operator = "";
+let secondnumber = "";
+let display=
+document.getElementById("display");
+let buttons=
+document.querySelectorAll(".btn");
+buttons.forEach(function (button){
+  button.onclick=function (){
+  let value=
+  button.textContent.trim();
+  console.log("Button:",value);
+
+if(
+  value === "+"||
+  value === "-"||
+  value === "/"||
+  value === "*"
+){
+  operator=value;
+  display.value=firstnumber+operator;
+  console.log(operator);
+}
+else if(value==="="){
+  let answer;
+if(operator==="+"){
+  answer=
+  Number(firstnumber)+Number(secondnumber);
+}
+else if(operator === "-") {
+  answer=
+  Number(firstnumber)-Number(secondnumber);
+}
+   else if(operator === "*") {
+  answer=
+  Number(firstnumber)*Number(secondnumber);
+}
+else if(operator === "/") {
+  answer=
+  Number(firstnumber)/Number(secondnumber);
+}
+
+console.log(answer);
+display.value=answer;
+firstnumber=answer.toString();
+operator="";
+secondnumber="";
+}
+else if(value==="AC"){
+  firstnumber="";
+  secondnumber="";
+  operator="";
+  display.value="";
+}
+else if (value === "⌫") {
+  if (operator === "") {
+    firstnumber = firstnumber.slice(0, -1);
+    display.value = firstnumber;
+  } else if (secondnumber === "") {
+    operator = "";
+    display.value = firstnumber;
+  } else {
+    secondnumber = secondnumber.slice(0, -1);
+    display.value = firstnumber + operator + secondnumber;
+  }
+}else if (value === "%") {
+  if (operator === "") {
+    firstnumber = (Number(firstnumber) / 100).toString();
+    display.value = firstnumber;
+  } else {
+    secondnumber = (Number(secondnumber) / 100).toString();
+    display.value = firstnumber + operator + secondnumber;
+  }
+}
+else{
+
+    if (operator === "") {
+        firstnumber += value;
+        display.value = firstnumber;
+    } else {
+        secondnumber += value;
+        display.value = firstnumber+operator+secondnumber;
+    }
+
+}
+};
+
+});
+</script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
 </head>
+<body style="background-color: pink">
+<h1>portfolio</h1>
+<h2>introduce myself</h2>
+<p>Hello!,this is  M.janaki,i bron 03/07/2008 in India.i had completed my 10 ssc in rayachoti at A.P.T.R school in masapayta.i have currently pursuing diploma third year cse branch at piller.</p>
 
-<body>
-  <form>
-    <label for=email></label><br>
-    <imput type=janaki></imput><br><br>
-      <label for=password></label><br>
-      <input type=janu><br><br>
-      <button>login </button>
-  </form>
-</body>
+<h3 style="color: green"><u>my photo</u></h3>
+<img src ="janu.jpg"width="300"><br><br>
+<b> my strength </b>
+<ul>
+  <li>self confidence </li>
+  <li>dare and dash talking</li>
+  <li>motivate my self </li>
+  <li>positive thinking </li>
+</ul>
+<h4>my weakness</h4>
+<ul>
+  <li>over confidence</li>
+  <li>lazzy</li>
+  <li>sometimes i think negatively </li>
+</ul><br>
+<strong>  My hobbies</strong>
+<ul>
+ <li>dancing</li>
+ <li>singing songs</li>
+ <li>music listening </li>
+ <li>watch motivation videos</li>
+ <li>maditation</li>
+</ul>
+<b>My graduation</b>-->
 
-</html>
-<from>
-  <label> student name:</label>
-  <input type="text"><br>
-<label>roll no:</label><br>
-  <input type="number"><br>
-  <label for="jk">class:</label><br>
-  <input type="text" id="jk"><br><br>
-  <label for="gh">Roll no:</label>
-  <select name="info" id="gh">
-    <option>45</option>
-    <option>56</option>
-  </select><br><br>
- <label for="kl">address:</label>
- <input type="text="kl"<br><br>
- <input type="submit" name="Submit">
-  </from>
-  <from action="janunu">
-    <label for="kl">action:</label><br>
-    <input type="text" id="kl"><br>
-    <label for="m">method:</label><br>
-   <input type="text" id="m"><br>
- <label for="jh">placeholder: </label><br>
-  <input type="text" name="enter"required><br>
-    <button>submit</button>
-    </from>
-   <form>
- <label for="janu">name:</label>
- <input type="text"name="janu"><br>
- <label for="jk">rollno:</label>
- <select>
-   <option>56</option>
-   <option>47</option>
-   </select><br>
-   <label type="ki">email:</label>
-   <input type="text" name="jk"id="ki"><br>
-   <label for="ok">password:</label><br>
-   <input type="text"id="ok"><br>
-   <label for="ol">rollno:</label><br>
-   <input type="text" id="ol"><br>
-   gender 
-   <label for="ja">Male</label>
-   <input type="radio" id="ja" name="gender">
-   <label for="ko">Female</label>
-   <input type="radio" id="ko" name="gender"><br><br>
-   <label for="ji">course:</label>
-   <select>
-     <option>cse</option>
-     <option>ece</option>
-   </select><br>
-   <label for="gy">checkbook:</label>
-   <input type="text"id="gy"><br>
-   <button>submit</button><br>
-   <button>restart</button>
-   </form>
-   
- <video controls width="300">
-     <source src="book.mp4" type ="video/mp4">
-     </video>
-     
-     <audio controls>
-     <source src="file.mp3" type ="audio/mp3"></audio>
-     <h1>video and music</h1<!DOCTYPE html>
-<html>
-<head>
-    <title>My Page</title>
-</head>
-<body>
-    Hello World
-</body>
-</html>
-    
-     
-    
+
