@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+  <h1>Rock Paper Scissors</h1>
+
+  <button class="choice">Rock</button>
+  <button class="choice">Paper</button>
+  <button class="choice">Scissors</button>
+
+  <p id="playerChoice"></p>
+  <p id="computerChoice"></p>
+  <p id="Result"></p>
+  <p id="score"></p>
+
+  <script>
+    const ply = document.getElementById("playerChoice");
+    const cpm = document.getElementById("computerChoice");
+    const rs = document.getElementById("Result");
+    const sc = document.getElementById("score");
+
+    const choices = ["Rock", "Paper", "Scissors"];
+
+    let playerScore = 0;
+    let computerScore = 0;
+
+    let btn = document.querySelectorAll(".choice");
+
+    btn.forEach(function(btn) {
+
+      btn.addEventListener("click", function() {
+
+        // Player choice
+        ply.innerText = "Player: " + btn.innerText;
+
+        // Computer choice
+        const randomIndex = Math.floor(Math.random() * 3);
+        const computerChoice = choices[randomIndex];
+
+        cpm.innerText = "Computer: " + computerChoice;
+
+        // Result
+        if (btn.innerText === computerChoice) {
+
+          rs.innerText = "Draw!";
+
+        } else if (
+          (btn.innerText === "Rock" && computerChoice === "Scissors") ||
+          (btn.innerText === "Paper" && computerChoice === "Rock") ||
+          (btn.innerText === "Scissors" && computerChoice === "Paper")
+        ) {
+
+          rs.innerText = "You Win!";
+          playerScore++;
+
+        } else {
+
+          rs.innerText = "Computer Wins!";
+          computerScore++;
+
+        }
+
+        // Score
+        sc.innerText =
+          "You: " + playerScore +
+          " | Computer: " + computerScore;
+
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
